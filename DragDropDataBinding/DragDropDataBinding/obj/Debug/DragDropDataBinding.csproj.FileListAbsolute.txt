@@ -1,0 +1,17 @@
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\bin\Debug\DragDropDataBinding.exe.config
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\bin\Debug\DragDropDataBinding.exe
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\bin\Debug\DragDropDataBinding.pdb
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\DragDropDataBinding.csprojAssemblyReference.cache
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\MainWindowMVVM.g.cs
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\MainWindow.g.cs
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\App.g.cs
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\DragDropDataBinding_MarkupCompile.cache
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\DragDropDataBinding_MarkupCompile.lref
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\MainWindowMVVM.baml
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\MainWindow.baml
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\DragDropDataBinding.g.resources
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\DragDropDataBinding.Properties.Resources.resources
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\DragDropDataBinding.csproj.GenerateResource.cache
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\DragDropDataBinding.exe
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\DragDropDataBinding.pdb
+C:\Users\bot.ESA-NG\Source\Repos\jvdbout\WPFProductivityPlaybook\DragDropDataBinding\DragDropDataBinding\obj\Debug\GeneratedInternalTypeHelper.g.cs

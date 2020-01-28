@@ -8,6 +8,164 @@
         Title="MainWindow"
         Height="500"
         Width="525">
+    <Window.DataContext>
+        <local:MainWindowMVVMViewModel />
+    </Window.DataContext>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="211*" />
+            <RowDefinition Height="258*" />
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="customerDataGrid"
+                  IsSynchronizedWithCurrentItem="True"
+                  AutoGenerateColumns="False"
+                  EnableRowVirtualization="True"
+                  ItemsSource="{Binding Customers}"
+                  Margin="10,10,107,1"
+                  RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="ageColumn"
+                                    Binding="{Binding Age}"
+                                    Header="Age"
+                                    Width="SizeToHeader" />
+                <DataGridTextColumn x:Name="firstNameColumn"
+                                    Binding="{Binding FirstName}"
+                                    Header="First Name"
+                                    Width="SizeToHeader" />
+                <DataGridCheckBoxColumn x:Name="isActiveColumn"
+                                        Binding="{Binding IsActive}"
+                                        Header="Is Active"
+                                        Width="SizeToHeader" />
+                <DataGridTextColumn x:Name="lastNameColumn"
+                                    Binding="{Binding LastName}"
+                                    Header="Last Name"
+                                    Width="SizeToHeader" />
+                <DataGridTextColumn x:Name="phoneColumn"
+                                    Binding="{Binding Phone}"
+                                    Header="Phone"
+                                    Width="SizeToHeader" />
+                <DataGridTextColumn x:Name="statusColumn"
+                                    Binding="{Binding Status}"
+                                    Header="Status"
+                                    Width="SizeToHeader" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid x:Name="grid1"
+              DataContext="{Binding Customers}"
+              HorizontalAlignment="Left"
+              Margin="10,10,0,0"
+              Grid.Row="1"
+              VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Content="Age:"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="3"
+                   Grid.Row="0"
+                   VerticalAlignment="Center" />
+            <TextBox x:Name="ageTextBox"
+                     Grid.Column="1"
+                     HorizontalAlignment="Left"
+                     Height="23"
+                     Margin="3"
+                     Grid.Row="0"
+                     Text="{Binding Age, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                     VerticalAlignment="Center"
+                     Width="120" />
+            <Label Content="First Name:"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="3"
+                   Grid.Row="1"
+                   VerticalAlignment="Center" />
+            <TextBox x:Name="firstNameTextBox"
+                     Grid.Column="1"
+                     HorizontalAlignment="Left"
+                     Height="23"
+                     Margin="3"
+                     Grid.Row="1"
+                     Text="{Binding FirstName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                     VerticalAlignment="Center"
+                     Width="120" />
+            <Label Content="Is Active:"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="3"
+                   Grid.Row="2"
+                   VerticalAlignment="Center" />
+            <CheckBox x:Name="isActiveCheckBox"
+                      Content=""
+                      Grid.Column="1"
+                      HorizontalAlignment="Left"
+                      IsChecked="{Binding IsActive, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                      Margin="3"
+                      Grid.Row="2"
+                      VerticalAlignment="Center" />
+            <Label Content="Last Name:"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="3"
+                   Grid.Row="3"
+                   VerticalAlignment="Center" />
+            <TextBox x:Name="lastNameTextBox"
+                     Grid.Column="1"
+                     HorizontalAlignment="Left"
+                     Height="23"
+                     Margin="3"
+                     Grid.Row="3"
+                     Text="{Binding LastName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                     VerticalAlignment="Center"
+                     Width="120" />
+            <Label Content="Phone:"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="3"
+                   Grid.Row="4"
+                   VerticalAlignment="Center" />
+            <TextBox x:Name="phoneTextBox"
+                     Grid.Column="1"
+                     HorizontalAlignment="Left"
+                     Height="23"
+                     Margin="3"
+                     Grid.Row="4"
+                     Text="{Binding Phone, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"
+                     VerticalAlignment="Center"
+                     Width="120" />
+            <Label Content="Status Id:"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="3"
+                   Grid.Row="5"
+                   VerticalAlignment="Center" />
+            <ComboBox x:Name="statusIdComboBox"
+                      Grid.Column="1"
+                      DisplayMemberPath="Name"
+                      HorizontalAlignment="Left"
+                      Height="Auto"
+                      ItemsSource="{Binding RelativeSource={RelativeSource AncestorType=Window}, Path=DataContext.Statuses}"
+                      Margin="3"
+                      Grid.Row="5"
+                      VerticalAlignment="Center"
+                      Width="120"
+                      SelectedValuePath="Id"
+                      SelectedValue="{Binding StatusId}">
+                <ComboBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel />
+                    </ItemsPanelTemplate>
+                </ComboBox.ItemsPanel>
+            </ComboBox>
+        </Grid>
     </Grid>
 </Window>
